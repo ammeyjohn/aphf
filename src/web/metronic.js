@@ -2,7 +2,7 @@
 
 import 'global/css/components.css';
 import 'frontend/layout/css/style.css';
-import 'frontend/pages/css/style-revolution-slider.css';
+// import 'frontend/pages/css/style-revolution-slider.css';
 
 import 'frontend/layout/css/style-responsive.css';
 import 'frontend/layout/css/themes/red.css';
@@ -19,15 +19,3 @@ import 'frontend/layout/css/custom.css';
 // import 'frontend/pages/scripts/revo-slider-init.js';
 
 /* END RevolutionSlider */
-
-import 'frontend/layout/scripts/layout.js';
-
-
-jQuery(document).ready(function() {
-    Layout.init();
-    Layout.initOWL();
-    RevosliderInit.initRevoSlider();
-    Layout.initTwitter();
-    Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-    Layout.initNavScrolling();
-});
