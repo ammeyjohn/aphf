@@ -138,7 +138,7 @@ export default (function() {
         });
 
         // close search box on body click
-        if ($('.search-btn').size() != 0) {
+        if ($('.search-btn').length != 0) {
             $('.search-box, .search-btn').on('click', function(e) {
                 e.stopPropagation();
             });
