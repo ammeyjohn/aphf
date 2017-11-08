@@ -1,18 +1,18 @@
 // Vendors required for all pages
 
 // Global
-
 import 'font-awesome/css/font-awesome.min.css';
 
-import 'jquery';
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 // import 'jquery-migrate';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 // Vue
-
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Vuex from 'vuex';
-import axios from 'axios';
+import 'vue';
+import 'vue-router';
+import 'vuex';
+import 'axios';

@@ -1,3 +1,6 @@
+import './vendor.js';
+import './metronic.js';
+
 // Vue
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -7,7 +10,8 @@ import axios from 'axios';
 import Layout from 'frontend/layout/scripts/layout.js';
 
 // Components
-import MenuBar from './app/header.vue';
+import MenuBar from './app/menubar.vue';
+import Slider from './app/slider.vue';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -16,8 +20,7 @@ Vue.use(Vuex);
 const router = new VueRouter({
     routes: [{
         path: '/',
-        name: 'root',
-        redirect: '/demo'
+        name: 'root'
     }]
 });
 
@@ -34,12 +37,13 @@ new Vue({
     store: store,
     // render: h => h(App)
     components: {
-        MenuBar
+        MenuBar,
+        Slider
     },
     mounted() {
-
         Layout.init();
-
         document.title = '第12届亚太口琴节';
+
+        
     }
 });

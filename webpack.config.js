@@ -9,7 +9,7 @@ module.exports = {
     entry: {
         vendor: './src/web/vendor.js',
         metronic: './src/web/metronic.js',
-        main: './src/web/main.js'
+        main: './src/web/main.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -41,7 +41,8 @@ module.exports = {
         }, {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
-                use: ['css-loader?minimize'],
+                // use: ['css-loader?minimize'],
+                use: ['css-loader'],
                 fallback: 'style-loader'
             })
         }, {
@@ -74,14 +75,15 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/web/app.html'
+            template: './src/web/app.html',
+            // chunksSortMode: 'none',
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
         }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: ['vendor', 'vue', 'runtime'],
+            name: ['vendor', 'metronic', 'runtime'],
             minChunks: Infinity
         }),
         new webpack.optimize.CommonsChunkPlugin({
