@@ -11,7 +11,6 @@ import Layout from 'frontend/layout/scripts/layout.js';
 
 // Components
 import MenuBar from './app/menubar.vue';
-import Slider from './app/slider.vue';
 import PreFooter from './app/prefooter.vue';
 import Foot from './app/foot.vue';
 
@@ -47,7 +46,6 @@ new Vue({
     // render: h => h(App)
     components: {
         MenuBar,
-        Slider,
         PreFooter,
         Foot
     },
