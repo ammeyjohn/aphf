@@ -3,10 +3,14 @@
         width: 100%;
         height: 500px;
         margin-top: -25px;
-        margin-bottom: -40px;
+        margin-bottom: 40px;
     }
     .owl-stage-outer {
         width: 100%;
+        z-index: -1;
+    }
+    .owl-dots {
+        margin-top: -30px !important;
     }
     .owl-carousel .slider {
         width: 100%;
@@ -60,7 +64,10 @@
         -moz-animation: bounceInUp .5s ease-in .5s  backwards ;
         -webkit-animation: bounceInDown .5s ease-in .5s  backwards;
         animation: bounceInUp .5s ease-in .5s  backwards;
-    }    
+    } 
+    .dots {
+        margin-top: -30px;
+    }   
 </style>
 
 <template>    

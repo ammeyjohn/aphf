@@ -12,6 +12,7 @@ import Layout from 'frontend/layout/scripts/layout.js';
 // Components
 import MenuBar from './app/menubar.vue';
 import Slider from './app/slider.vue';
+import PreFooter from './app/prefooter.vue';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -38,12 +39,13 @@ new Vue({
     // render: h => h(App)
     components: {
         MenuBar,
-        Slider
+        Slider,
+        PreFooter
     },
     mounted() {
         Layout.init();
         document.title = '第12届亚太口琴节';
 
-        
+
     }
 });
