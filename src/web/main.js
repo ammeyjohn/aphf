@@ -46,8 +46,5 @@ new Vue({
     },
     mounted() {
         Layout.init();
-        document.title = '第12届亚太口琴节';
-
-
     }
 });
