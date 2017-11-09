@@ -13,6 +13,7 @@ import Layout from 'frontend/layout/scripts/layout.js';
 import MenuBar from './app/menubar.vue';
 import Slider from './app/slider.vue';
 import PreFooter from './app/prefooter.vue';
+import Foot from './app/foot.vue';
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -40,7 +41,8 @@ new Vue({
     components: {
         MenuBar,
         Slider,
-        PreFooter
+        PreFooter,
+        Foot
     },
     mounted() {
         Layout.init();
