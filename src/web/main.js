@@ -22,7 +22,14 @@ Vue.use(Vuex);
 const router = new VueRouter({
     routes: [{
         path: '/',
-        name: 'root'
+        name: 'root',
+        redirect: '/index'
+    }, {
+        path: '/index',
+        name: 'index',
+        component: resolve => {
+            require(['./index/index.vue'], resolve);
+        }
     }]
 });
 
