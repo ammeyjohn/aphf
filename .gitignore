@@ -59,3 +59,7 @@ typings/
 
 # Distribution
 dist/
+
+# .Net Core
+obj/
+bin/
