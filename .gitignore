@@ -60,6 +60,8 @@ typings/
 # Distribution
 dist/
 
-# .Net Core
+# .Net
+.suo
+.user
 obj/
 bin/
